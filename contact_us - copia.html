@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    css     -->
+    <link rel="stylesheet" href="contact_us.css">
+    <!--    fonts   -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75770889d9.js" crossorigin="anonymous"></script>
+    <!--    js      defer   -->
+    <script src="js/theme.js" type="text/javascript" defer></script>
+    <title>CodearTech - Home</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <!-- Encabezado o Header -->
+        <header class="header">
+
+            <div class="logo">
+                <img class="img" src="assets/imgs/triqueta.png" alt="triqueta">
+                <a href="index.html">
+                    <h2><span>CodeAr</span>Tech</h2>
+                </a>
+            </div>
+
+            <button class="abrir" id="abrir">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
+            </button>
+
+            <!-- Menú -->
+            <nav class="nav" id="nav">
+                <button class="cerrar" id="cerrar">
+                    <i class="fa-solid fa-xmark" style="color: #e3eaf4;"></i>
+                </button>
+                <ul class="nav-list">
+                    <li id="myLinks"><a href="know_us.html"><i>Conocenos</i></a></li>
+                    <li id="myLinks"><a href="success_stories.html"><i>Casos de éxito</i></a></li>
+                    <li id="myLinks"><a href=""><i>Contactanos</i></a></li>
+                    <li id="myLinks"><a href=""><i>B l o g</i></a></li>
+                </ul>
+            </nav>
+            <!--  THEME  -->
+            <label class="switch">
+                <input type="checkbox" id="deslizar" checked>
+                <span class="deslizar"></span>
+            </label>
+        </header>
+            
+        
+        <!-- mapa -->
+        <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6569.399109856682!2d-58.45250099999999!3d-34.586468!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57b1bfa5423%3A0xedd0369d6d88c522!2sAcademia%20CodeAr!5e0!3m2!1ses-419!2sar!4v1683248646445!5m2!1ses-419!2sar" width="1000" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!--    contact     form    -->
+        <div class="codear-info">
+            <h2>Contactanos</h2>
+            <ul>
+                <li><i class="fa-solid fa-road"></i><i> Forest Avenida 445, CABA</i></li>
+                <li><i class="fa-brands fa-whatsapp fa-lg"></i><i> (+54) 9 11 555-5555</i></li>
+                <li><i class="fa-solid fa-envelope"></i> <i>codear-info@email.com</i></li>
+            </ul>
+
+        </div>
+
+        <div class="contact">
+            <h3>Completa el formulario</h3>
+
+            <br>
+            <p>Si necesitas hacer alguna consulta o comentario, no dudes en completar nuestro formulario de contacto.
+                <br> Estaremos encantados de recibir tu mensaje y te responderemos lo antes posible.
+            </p>
+            <br>
+            
+            <form>
+                <p>
+                    <label><i>NOMBRE COMPLETO</i></label>
+                    <input type="text" name="name" required placeholder="n o m b r e . . ." id="contact-name"
+                        onkeyup="validateName()">
+                    <span id="name-error"></span>
+                </p>
+
+                <p>
+                    <label><i>COMPAÑIA</i></label>
+                    <input type="text" name="company" required placeholder="c o m p a ñ i a . . ." id="contact-company"
+                    onkeyup="validateCompany()">
+                    <span id="company-error"></span>
+                </p>
+
+                <p>
+                    <label><i>EMAIL</i></label>
+                    <input type="email" name="email" required placeholder="e m a i l . . ." id="contact-email"
+                    onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </p>
+
+                <p>
+                    <label><i>NUMERO DE TELEFONO</i></label>
+                    <input type="tel" name="phone" required placeholder="n u m e r o . . ." id="contact-phone"
+                    onkeyup="validatePhone()">
+                    <span id="phone-error"></span>
+                </p>
+
+                <p>
+                    <label><i>ASUNTO</i></label>
+                    <input type="text" name="subject" required placeholder="a s u n t o . . ." id="contact-subject"
+                    onkeyup="validateSubject()">
+                    <span id="subject-error"></span>
+                </p>
+
+
+                <p class="full">
+                    <label><i>MENSAJE</i></label>
+                    <textarea name="message" cols="5" required placeholder="m e n s a j e . . ." id="contact-message"
+                    onkeyup="validateMessage()"></textarea>
+                    <span id="message-error"></span>
+                </p>
+
+
+                <p class="full">
+                    <button type="submit">Enviar</button>
+                </p>
+
+                <!-- js -->
+                <p class="warnings" id="warnings"></p>
+                <script src="js/contact_us.js"></script>
+            </form>
+        </div>
+        <!--    contact     form    -->
+
+        <!--    footer    -->
+        <footer class="footer">
+            <div class="footer_img">
+                <img src="assets/imgs/triqueta.png" alt="triqueta">
+            </div>
+            <div class="copyright">
+                <h2><span>CodeAr</span>Tech</h2></a> <br>
+                <i>
+                    <p>Code Argentina Tech S.R.L </p> <br>
+                    <p> <!--  script que actualiza el año al actual  -->
+                        <script type="text/javascript">
+                            copyright = new Date();
+                            update = copyright.getFullYear(); document.write("© " + update + " " + "@All rights reserved");
+                        </script>
+                    </p><br>
+                </i>
+            </div>
+            <div class="casos">
+                <a href="">Casos de éxito</a>
+            </div>
+            <div class="valor">
+                <a href="">Aportando valor...</a>
+            </div>
+            <div class="conocenos">
+                <a href="know_us.html">Conocenos!</a>
+            </div>
+            <div class="contactanos">
+                <a href="">Contactanos</a>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://discord.com" target="_blank">
+                    <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://web.telegram.org" target="_blank">
+                    <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+                </a>
+                <br>
+                <a href="">English </a>|<a href=""> Español</a>
+
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
+<!--
+    CAMBIOS REALIZADOS:
+    @ Se agrego theme en header y css, se agrego js para theme. 
+    @ css: width a 100% 
+    @ css: .contenedor saque margen inferior (de 20 a cero) asi pegar footer a botton.
+    @ header li: agregue margin-right 30px. Y padding: 0 20px; 
+    @ header z-index: 1 
+-->
