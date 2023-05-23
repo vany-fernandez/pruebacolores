@@ -8,7 +8,7 @@ const footer = document.querySelector("footer");
 header.innerHTML = `
 
 <div class="logo">
-<img class="img" src="assets/imgs/triquetra_64px.png" alt="triqueta">
+<img class="img" src="assets/imgs/triquetra_64px.png" alt="triquetra">
 <a href="index.html">
     <h2><span>CodeAr</span>Tech</h2>
 </a>
@@ -24,11 +24,11 @@ header.innerHTML = `
     <i class="fa-solid fa-xmark" style="color: #e3eaf4;"></i>
 </button>
 <ul class="nav-list">
-    <li id="myLinks"><a href="index.html"><i>Home</i></a></li>
-    <li id="myLinks"><a href="know_us.html"><i>Conocenos</i></a></li>
-    <li id="myLinks"><a href="success_stories.html"><i>Casos de éxito</i></a></li>
-    <li id="myLinks"><a href="contact_us.html"><i>Contactanos</i></a></li>
-    <li id="myLinks"><a href=""><i>Codeemos</i></a></li>
+    <li id="myLinks"><a href="index.html"><i>CODEAR</i></a></li>
+    <li id="myLinks"><a href="know_us.html"><i>CONOCENOS</i></a></li>
+    <li id="myLinks"><a href="success_stories.html"><i>CASOS</i></a></li>
+    <li id="myLinks"><a href="contact_us.html"><i>CONTACTANOS</i></a></li>
+    <li id="myLinks"><a href="codeemos.html"><i>CODEEMOS</i></a></li>
 </ul>
 </nav>
 <!--  BUTTON  UP  -->
@@ -48,7 +48,7 @@ alt="triquetra">
 footer.innerHTML = `
 
 <div class="footer_img">
-<img src="assets/imgs/triquetra_256px.png" alt="triqueta">
+<img src="assets/imgs/triquetra_256px.png" alt="triquetra">
 </div>
 <div class="copyright">
 <h2><span>CodeAr</span>Tech</h2></a> <br>
@@ -66,32 +66,24 @@ footer.innerHTML = `
 <a href="success_stories.html">Casos de éxito</a>
 </div>
 <div class="valor">
-<a href="">Aportando valor...</a>
+<a href="codeemos.html">Codea con nosotros!</a>
 </div>
 <div class="conocenos">
 <a href="know_us.html">Conocenos!</a>
 </div>
 <div class="contactanos">
-<a href="">Contactanos</a>
+<a href="contact_us.html">Contactanos</a>
 </div>
 <div class="redes">
-<a href="https://www.instagram.com/" target="_blank">
-    <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
-</a>
-<a href="https://twitter.com" target="_blank">
-    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-</a>
 <a href="https://www.linkedin.com" target="_blank">
-    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-linkedin"></i>
 </a>
 <a href="https://discord.com" target="_blank">
-    <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-discord"></i>
 </a>
-<a href="https://web.telegram.org" target="_blank">
-    <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
-</a>
-<br>
+<a href="https://github.com/Gimena-Riveros/CodeArTech" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a><br>
 <a href="">English </a>|<a href=""> Español</a>
-
 </div>
 `;
